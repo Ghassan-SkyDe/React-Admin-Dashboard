@@ -8,7 +8,7 @@ import {
   NotificationsOutlined, 
   SettingsOutlined, 
   PersonOutline, 
-  Search} from "@mui/icons-material";
+  Search } from "@mui/icons-material";
 
 const Topbar = () => {
   const theme = useTheme();
