@@ -1,11 +1,7 @@
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar';
-import Avatar from '@mui/material/Avatar';
-import {
-    KeyboardDoubleArrowLeftIcon,
-    KeyboardDoubleArrowRightIcon
-} from "./icons";
-import { Box, IconButton, Typography, colors, useTheme } from "@mui/material";
+import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
+import { KeyboardDoubleArrowLeftIcon, KeyboardDoubleArrowRightIcon } from "./icons";
+import { Box, IconButton, Typography, colors, Avatar, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { Link } from 'react-router-dom';
 
@@ -50,13 +46,15 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
+
 const SidebarNav = () => {
+  // replace with real User data
   const USER = null;
-  const { collapseSidebar, toggleSidebar, collapsed, toggled, broken, rtl } = useProSidebar();
+  const { collapseSidebar, collapsed } = useProSidebar();
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  // const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
+
   return (
     <Box>
       <Sidebar className="sidebar" rootStyles={{
@@ -67,8 +65,17 @@ const SidebarNav = () => {
           <IconButton className="sidebar-header-item" onClick={() => collapseSidebar()} >{collapsed ? <KeyboardDoubleArrowRightIcon/> : <KeyboardDoubleArrowLeftIcon/> }</IconButton>
         </Menu>
         {!collapsed && <Box className="sidebar-user">
-          {USER ? <Avatar src={USER?.image} /> : <Avatar src="/broken-image.jpg" />}
-          <Typography>{USER ? USER?.name : "User Name"}</Typography>
+
+          {USER 
+          ? <Avatar sx={{ width: {xs: 35 , sm: 60}, height: {xs: 35 , sm: 60} }} src={USER?.image} /> 
+          : <Avatar sx={{ width: {xs: 35 , sm: 60}, height: {xs: 35 , sm: 60} }} src="/broken-image.jpg" />}
+
+          <Typography variant="h3" color={colors.gray[100]} fontWeight="bold" sx={{ m: "10px 0 0 0" }}>
+            {USER ? USER?.name : "User Name"}
+          </Typography>
+          <Typography variant="h6" color={colors.greenAccent[500]}>
+            VP Fancy Admin      
+          </Typography>
         </Box>}
 
         <Box>
