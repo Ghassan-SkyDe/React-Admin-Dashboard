@@ -24,9 +24,9 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <Menu menuItemStyles={{
       button: ({active}) => {
         return {
-            background : active ? "red" : 'transparent',
+            background : active ? colors.greenAccent[500] : 'transparent',
             '&:hover': {
-              backgroundColor: 'red',
+              backgroundColor: colors.greenAccent[400],
             },
           };
       }
@@ -48,8 +48,10 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 
 
 const SidebarNav = () => {
-  // replace with real User data
-  const USER = null;
+  // replace with real ADMIN data
+  // example 
+  const ADMIN = { name: "sky de", image: "https://i.pravatar.cc/300"};
+
   const { collapseSidebar, collapsed } = useProSidebar();
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -61,17 +63,14 @@ const SidebarNav = () => {
        backgroundColor: colors.primary[400],
        }}>
         <Menu className="sidebar-header">
-          {!collapsed && <Typography>ADMINS</Typography>}
+          {!collapsed && <Typography variant="h4" color={colors.gray[100]}>ADMINS</Typography>}
           <IconButton className="sidebar-header-item" onClick={() => collapseSidebar()} >{collapsed ? <KeyboardDoubleArrowRightIcon/> : <KeyboardDoubleArrowLeftIcon/> }</IconButton>
         </Menu>
         {!collapsed && <Box className="sidebar-user">
 
-          {USER 
-          ? <Avatar sx={{ width: {xs: 35 , sm: 60}, height: {xs: 35 , sm: 60} }} src={USER?.image} /> 
-          : <Avatar sx={{ width: {xs: 35 , sm: 60}, height: {xs: 35 , sm: 60} }} src="/broken-image.jpg" />}
-
-          <Typography variant="h3" color={colors.gray[100]} fontWeight="bold" sx={{ m: "10px 0 0 0" }}>
-            {USER ? USER?.name : "User Name"}
+          <Avatar sx={{ width: {xs: 35 , sm: 60}, height: {xs: 35 , sm: 60} }} src={ADMIN ? ADMIN?.image : "/broken-image.jpg"} /> 
+          <Typography textTransform="capitalize" variant="h3" color={colors.gray[100]} fontWeight="bold" sx={{ m: "10px 0 0 0" }}>
+            {ADMIN ? ADMIN?.name : "User Name"}
           </Typography>
           <Typography variant="h6" color={colors.greenAccent[500]}>
             VP Fancy Admin      

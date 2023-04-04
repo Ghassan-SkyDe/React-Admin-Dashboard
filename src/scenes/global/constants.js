@@ -10,7 +10,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
-
+// data for sidebar / to prevent repeat sidebar elements using maping this data
 export const sidebarData = [ 
   {
     id:1,
