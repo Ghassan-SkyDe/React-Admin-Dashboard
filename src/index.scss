@@ -27,9 +27,9 @@ body,
 }
 
 /* track */
-::-webkit-scrollbar-track {
-  background: #e0e0e0;
-}
+// ::-webkit-scrollbar-track {
+//   background: #e0e0e0;
+// }
 
 /* handle */
 ::-webkit-scrollbar-thumb {
@@ -43,7 +43,7 @@ body,
     border-bottom-right-radius: 10px;
 }
 
-
+// clean this code--fixIt
 /* Sidebar */
 .sidebar-con{
   position: relative;
@@ -97,4 +97,15 @@ body,
 
 .sidebar > div{
   background-color: transparent!important;
+}
+
+
+// prevents overflow cuz of outline of cells after focus
+.css-cgabbm-MuiDataGrid-root .MuiDataGrid-columnHeader:focus,
+.css-cgabbm-MuiDataGrid-root .MuiDataGrid-cell:focus{
+  outline: none!important;
+}
+
+.data-grid{
+  max-width: 100%;
 }

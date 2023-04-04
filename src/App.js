@@ -17,6 +17,7 @@ import {
   Team
 } from "./scenes"
 import { Route, Routes } from "react-router-dom";
+import Header from "./scenes/global/Header";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -28,6 +29,7 @@ function App() {
           <SidebarNav/>
           <main className="content">
             <Topbar />
+            <Header/>
             <Routes>
               <Route path="/bar" element={<Bar/>} />
               <Route path="/calendar" element={<Calendar/>} />

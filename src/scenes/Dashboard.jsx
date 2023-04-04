@@ -1,7 +1,10 @@
+import { Box } from "@mui/material";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <Box display="flex" justifyContent="space-between" alignItems="center">
+      dashboard
+    </Box>
   )
 }
 

@@ -126,6 +126,23 @@ export const themeSettings = (mode) => {
     const colors = tokens(mode);
 
     return {
+        // fitIt
+        components: {
+            MuiDataGrid: {
+                styleOverrides: {
+                    cell: {
+                        '&:focus': {
+                            outLine: "none!important"
+                        }
+                    },
+                    columnHeader: {
+                        '&:focus': {
+                            outLine: "none!important"
+                        }
+                    },
+                }
+            }
+        },
         palette: {
             mode: mode,
             ...(mode === 'dark'
@@ -193,6 +210,8 @@ export const themeSettings = (mode) => {
                 fontSize: 14,
             },
         }
+
+        
     };
 };
 
