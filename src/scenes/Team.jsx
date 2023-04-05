@@ -1,8 +1,8 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../theme";
 import { mockDataTeam } from "../data/mockData";
 import { AdminPanelSettingsOutlined, LockOpenOutlined, SecurityOutlined } from "@mui/icons-material";
+import DataGridComponent from "../components/dataGrid/DataGridComponent";
 const Team = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -64,33 +64,10 @@ const Team = () => {
   ];
   
   return (
-    <Box height="75vh" width="75vw" m="20px" sx={{
-      "& .MuiDataGrid-root" : {
-        border: "none"
-      },
-      "& .MuiDataGrid-cell": {
-        border: "none"
-      },
-      "& .name-column--cell": {
-        color: colors.greenAccent[300],
-      },
-      "& .MuiDataGrid-columnHeadersInner": {
-        backgroundColor: colors.blueAccent[700],
-      },
-      "& .MuiDataGrid-columnHeaders": {
-        borderBottom: "none",
-      },
-      "& .MuiDataGrid-virtualScroller" : {
-        backgroundColor: colors.primary[400]
-      },
-      "& .MuiDataGrid-footerContainer": {
-        borderTop: "none",
-        backgroundColor: colors.blueAccent[700]
-      }
-    }}>
-      <DataGrid tabI className="data-grid" rows={mockDataTeam} columns={columns}/>
-    </Box>
+      <DataGridComponent 
+        rows={mockDataTeam} 
+        columns={columns} />
   )
-}
+};
 
 export default Team

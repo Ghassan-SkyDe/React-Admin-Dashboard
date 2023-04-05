@@ -202,45 +202,6 @@ export const mockDataContacts = [
     registrarId: 92197,
   },
 ];
-// columns
-export const contactsColumns = [
-  {
-    field: "id",
-    headerName: "ID"
-  },
-  {
-    field: "name",
-    headerName: "Name"
-  },
-  {
-    field: "email",
-    headerName: "Email"
-  },
-  {
-    field: "age",
-    headerName: "Age"
-  },
-  {
-    field: "phone",
-    headerName: "Phone"
-  },
-  {
-    field: "address",
-    headerName: "Address"
-  },
-  {
-    field: "city",
-    headerName: "City"
-  },
-  {
-    field: "zipCode",
-    headerName: "ZipCode"
-  },
-  {
-    field: "registrarId",
-    headerName: "RegistrarID"
-  },
-]
 
 export const mockDataInvoices = [
   {
