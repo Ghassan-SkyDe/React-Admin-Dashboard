@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, Stack, useTheme } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 // to prevent repeating classes/pagesize
@@ -7,7 +7,9 @@ const DataGridComponent = ({ columns, rows, checkbox, Toolbar }) => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box height="75vh" width="75vw" m="20px" sx={{
+  <Stack width="100%" display="grid">
+    <Box  height="75vh" width="75vw" m="20px" sx={{
+      justifySelf: "center",
       "& .MuiDataGrid-root" : {
         border: "none"
       },
@@ -46,6 +48,7 @@ const DataGridComponent = ({ columns, rows, checkbox, Toolbar }) => {
          components={Toolbar ? { Toolbar: GridToolbar } : null}/>
 
     </Box>
+  </Stack>
   )
 }
 
