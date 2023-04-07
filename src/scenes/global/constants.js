@@ -81,7 +81,7 @@ export const sidebarData = [
     name: "item",
     title: "Bar Chart",
     icon: <BarChartOutlinedIcon />,
-    to: "/pie"
+    to: "/bar"
   },
   {
     id:12,
