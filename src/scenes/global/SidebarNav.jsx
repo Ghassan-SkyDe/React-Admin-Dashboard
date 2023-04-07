@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
-import { KeyboardDoubleArrowLeftIcon, KeyboardDoubleArrowRightIcon } from "./icons";
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { Box, IconButton, Typography, colors, Avatar, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { Link } from 'react-router-dom';

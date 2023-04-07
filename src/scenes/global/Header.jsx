@@ -17,6 +17,7 @@ const Header = () => {
     // invoices => list of Invoices balances 
     // form => create new user profile
     // calendar => fullCalendar interactive page
+    // faq => Frequently Asked Questions Page
   return (
     <Box mb="30px" display="flex" flexDirection="column" alignItems="flex-start" sx={{padding:"0 0.5rem"}}>
         <Typography variant="h2" color={colors.gray[100]} fontWeight="bold" sx={{mb:"5px"}}>{title.toUpperCase()}</Typography>

@@ -19,6 +19,7 @@ const Calendar = () => {
          ]);
 
   const handleDateClick = (selected) => {
+    // add mui alert here----fixIt
     const title = prompt("Please enter a new title for your event");
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
@@ -36,6 +37,7 @@ const Calendar = () => {
 
   const handleEventClick = (selected) => {
     if (
+    // add mui alert here----fixIt
       window.confirm(
         `Are you sure you want to delete the event '${selected.event.title}'`
       )
