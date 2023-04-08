@@ -20,6 +20,8 @@ const Header = () => {
     // faq => Frequently Asked Questions Page
     // bar => Bar chart page for more details
     // pi => Pi chart page for more details
+    // line => Line chart page for more details
+    // geography => Geography Chart page for more details
   return (
     <Box mb="30px" display="flex" flexDirection="column" alignItems="flex-start" sx={{padding:"0 0.5rem"}}>
         <Typography variant="h2" color={colors.gray[100]} fontWeight="bold" sx={{mb:"5px"}}>{title.toUpperCase()}</Typography>

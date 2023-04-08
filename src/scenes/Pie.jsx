@@ -4,7 +4,7 @@ import { mockPieData as data } from '../data/mockData';
 
 const Pie = () => {
   return (
-    <Box height="75vh" width="85vw">
+    <Box height="75vh" width="85vw" m="0 auto">
       <PieChart data={data} />
     </Box>
   )

@@ -4,7 +4,7 @@ import { mockLineData2 as data } from '../data/mockData';
 
 const Line = () => {
   return (
-    <Box height="75vh" width="85vw">
+    <Box height="75vh" width="85vw" m="0 auto">
       <LineChart data={data} isMinimal/>
     </Box>
   )

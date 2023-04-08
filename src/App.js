@@ -19,8 +19,10 @@ import {
 import { Route, Routes } from "react-router-dom";
 import Header from "./scenes/global/Header";
 
+
 function App() {
   const [theme, colorMode] = useMode();
+  
   return (
     <ColorModeContext.Provider value={colorMode}>
      <ThemeProvider theme={theme}>
