@@ -3,33 +3,33 @@ import { useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 
 
-const BarChart = ({ data, isDashboard }) => {
+const BarChart = ({ data, isMinimal }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
   return (
     <ResponsiveBar
         data={data}
         theme={{
-                "axis": {
-            "domain": {
-                "line": {
-                    "stroke": colors.gray[100],
-                }
-            },
-            "legend": {
-                "text": {
-                    "fill": colors.gray[100],
-                }
-            },
-            "ticks": {
-                "line": {
-                    "stroke": colors.gray[100],
-                    "strokeWidth": 1
-                },
-                "text": {
-                    "fill": colors.gray[100],
-                }
-            }
+            "axis": {
+              "domain": {
+                  "line": {
+                      "stroke": colors.gray[100],
+                  }
+              },
+              "legend": {
+                  "text": {
+                      "fill": colors.gray[100],
+                  }
+              },
+              "ticks": {
+                  "line": {
+                      "stroke": colors.gray[100],
+                      "strokeWidth": 1
+                  },
+                  "text": {
+                      "fill": colors.gray[100],
+                  }
+              }
             },
             "legends": {
               "text": {
@@ -105,7 +105,7 @@ const BarChart = ({ data, isDashboard }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: isDashboard ? undefined : 'country',
+            legend: isMinimal ? undefined : 'country',
             legendPosition: 'middle',
             legendOffset: 32
         }}
@@ -113,7 +113,7 @@ const BarChart = ({ data, isDashboard }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: isDashboard ? undefined : 'food',
+            legend: isMinimal ? undefined : 'food',
             legendPosition: 'middle',
             legendOffset: -40
         }}
@@ -127,7 +127,8 @@ const BarChart = ({ data, isDashboard }) => {
                 ]
             ]
         }}
-        legends={[
+        legends={ isMinimal ? []
+         : [
             {
                 dataFrom: 'keys',
                 anchor: 'bottom-right',
