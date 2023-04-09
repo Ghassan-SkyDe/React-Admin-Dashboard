@@ -1,10 +1,9 @@
-import { Box, Stack, useTheme } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
-import { tokens } from "../../theme";
+import { useColors } from "../../hooks/useColors";
 // to prevent repeating classes/pagesize
 const DataGridComponent = ({ columns, rows, checkbox, Toolbar }) => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const { colors } = useColors();
 
   return (
   <Stack width="100%" display="grid">

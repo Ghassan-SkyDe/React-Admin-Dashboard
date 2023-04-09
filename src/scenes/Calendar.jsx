@@ -3,14 +3,13 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import listPlugin from "@fullcalendar/list";
 import interactionPlugin from "@fullcalendar/interaction";
-import { Box, List, ListItem, ListItemText, Typography, useTheme } from "@mui/material";
-import { tokens } from "../theme";
+import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { formatDate } from "@fullcalendar/core";
 import FullCalendar from "@fullcalendar/react";
+import { useColors } from "../hooks/useColors";
 
 const Calendar = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const { colors } = useColors();
   // make currentEvents to [empty array] / data is just for test
   const [currentEvents, setCurrentEvents] = useState([
           {id: "123", title: "All-day event", date: "2023-04-19"},

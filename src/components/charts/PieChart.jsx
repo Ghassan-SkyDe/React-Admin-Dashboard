@@ -1,10 +1,8 @@
 import { ResponsivePie } from "@nivo/pie";
-import { useTheme } from '@mui/material';
-import { tokens } from '../../theme';
+import { useColors } from "../../hooks/useColors";
 
 const PieChart = ({ data, isMinimal }) => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const { colors } = useColors();
   return (
     <ResponsivePie
         data={data}

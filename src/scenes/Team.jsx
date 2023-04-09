@@ -1,11 +1,11 @@
-import { Box, Typography, useTheme } from "@mui/material";
-import { tokens } from "../theme";
+import { Box, Typography } from "@mui/material";
 import { mockDataTeam } from "../data/mockData";
 import { AdminPanelSettingsOutlined, LockOpenOutlined, SecurityOutlined } from "@mui/icons-material";
 import DataGridComponent from "../components/dataGrid/DataGridComponent";
+import { useColors } from "../hooks/useColors";
+
 const Team = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const { colors } = useColors();
   const columns = [
     { field: "id", headerName: "ID" },
     {

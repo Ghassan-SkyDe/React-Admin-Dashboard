@@ -1,11 +1,10 @@
-import { Box, Typography, useTheme } from "@mui/material";
-import { tokens } from "../../theme";
+import { Box, Typography } from "@mui/material";
 import { useLocation } from "react-router-dom";
+import { useColors } from "../../hooks/useColors";
 
 
 const Header = () => {
-    const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
+    const { colors } = useColors();
     const path = useLocation().pathname.slice(1);
     const title = path === "" ? "Dashboard" : path;
     // change this at last--fixIt

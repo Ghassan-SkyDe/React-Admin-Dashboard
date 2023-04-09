@@ -1,11 +1,9 @@
 import { ResponsiveBar } from "@nivo/bar";
-import { useTheme } from "@mui/material";
-import { tokens } from "../../theme";
+import { useColors } from "../../hooks/useColors";
 
 
 const BarChart = ({ data, isMinimal }) => {
-    const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
+    const { colors } = useColors();
   return (
     <ResponsiveBar
         data={data}

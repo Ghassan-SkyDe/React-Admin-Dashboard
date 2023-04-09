@@ -1,11 +1,10 @@
-import { Typography, useTheme } from "@mui/material";
-import { tokens } from "../../theme";
+import { Typography } from "@mui/material";
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import { ExpandMoreOutlined } from "@mui/icons-material";
+import { useColors } from "../../hooks/useColors";
 
 const AccordionComponent = ({ summary, details, isExpanded }) => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const { colors } = useColors();
   
   return (
     <Accordion defaultExpanded={ isExpanded }>

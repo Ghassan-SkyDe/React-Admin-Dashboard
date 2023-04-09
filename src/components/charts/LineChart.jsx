@@ -1,11 +1,9 @@
-import { useTheme } from "@mui/material";
-import { tokens } from "../../theme";
 import { ResponsiveLine } from "@nivo/line";
+import { useColors } from "../../hooks/useColors";
 
 
 const LineChart = ({ data, isMinimal }) => {
-    const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
+    const { colors } = useColors();
   return (
     <ResponsiveLine
         data={data}

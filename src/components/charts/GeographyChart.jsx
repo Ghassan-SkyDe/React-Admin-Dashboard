@@ -1,10 +1,8 @@
-import { useTheme } from "@mui/material";
 import { ResponsiveChoropleth } from "@nivo/geo";
-import { tokens } from "../../theme";
+import { useColors } from "../../hooks/useColors";
 
 const GeographyChart = ({ data, features, isMinimal }) => {
-    const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
+    const { colors } = useColors();
   return (
     <ResponsiveChoropleth
         data={data}
