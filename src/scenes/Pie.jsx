@@ -1,11 +1,10 @@
 import { Box } from '@mui/material';
-import PieChart from '../components/charts/PieChart';
-import { mockPieData as data } from '../data/mockData';
+import { PieChart } from '../components/charts';
 
 const Pie = () => {
   return (
     <Box height="75vh" width="85vw" m="0 auto">
-      <PieChart data={data} />
+      <PieChart />
     </Box>
   )
 }

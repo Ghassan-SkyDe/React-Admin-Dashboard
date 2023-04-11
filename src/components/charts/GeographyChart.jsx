@@ -1,12 +1,16 @@
 import { ResponsiveChoropleth } from "@nivo/geo";
 import { useColors } from "../../hooks/useColors";
+// fetch real data and replace 
+import { mockGeographyData as data } from "../../data/mockData";
+import { geoFeatures } from "../../data/mockGeoFeatures";
 
-const GeographyChart = ({ data, features, isMinimal }) => {
-    const { colors } = useColors();
+
+const GeographyChart = ({ isMinimal }) => {
+  const { colors } = useColors();
   return (
     <ResponsiveChoropleth
         data={data}
-        features={features}
+        features={geoFeatures.features}
         theme={{
             "axis": {
               "domain": {
@@ -51,13 +55,13 @@ const GeographyChart = ({ data, features, isMinimal }) => {
         graticuleLineColor="#dddddd"
         borderWidth={1}
         borderColor={colors.greenAccent[200]}
-        legends={isMinimal ? [] : [
+        legends={[
             {
-                anchor: 'bottom-left',
+                anchor: isMinimal ? "right" : 'bottom-left',
                 direction: 'column',
                 justify: true,
-                translateX: 20,
-                translateY: -100,
+                translateX: isMinimal ? 0 : 20,
+                translateY: isMinimal ? 0 : -100,
                 itemsSpacing: 0,
                 itemWidth: 94,
                 itemHeight: 18,

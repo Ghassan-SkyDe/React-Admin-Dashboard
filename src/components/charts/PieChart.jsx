@@ -1,7 +1,9 @@
 import { ResponsivePie } from "@nivo/pie";
 import { useColors } from "../../hooks/useColors";
+// fetch real data and replace 
+import { mockPieData as data } from "../../data/mockData";
 
-const PieChart = ({ data, isMinimal }) => {
+const PieChart = ({ isMinimal }) => {
   const { colors } = useColors();
   return (
     <ResponsivePie

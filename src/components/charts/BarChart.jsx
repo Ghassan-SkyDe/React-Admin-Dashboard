@@ -1,8 +1,10 @@
 import { ResponsiveBar } from "@nivo/bar";
 import { useColors } from "../../hooks/useColors";
+// fetch real data and replace 
+import { mockBarData as data } from "../../data/mockData";
 
 
-const BarChart = ({ data, isMinimal }) => {
+const BarChart = ({ isMinimal }) => {
     const { colors } = useColors();
   return (
     <ResponsiveBar

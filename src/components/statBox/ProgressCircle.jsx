@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 import { useColors } from "../../hooks/useColors"
 
 const ProgressCircle = ( { progress = "0.74", size = "40" }) => {

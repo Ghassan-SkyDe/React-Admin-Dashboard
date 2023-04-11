@@ -268,48 +268,56 @@ export const mockDataInvoices = [
 
 export const mockTransactions = [
   {
+    id:101,
     txId: "01e4dsa",
     user: "johndoe",
     date: "2021-09-01",
     cost: "43.95",
   },
   {
+    id:102,
     txId: "0315dsaa",
     user: "jackdower",
     date: "2022-04-01",
     cost: "133.45",
   },
   {
+    id:103,
     txId: "01e4dsa",
     user: "aberdohnny",
     date: "2021-09-01",
     cost: "43.95",
   },
   {
+    id:104,
     txId: "51034szv",
     user: "goodmanave",
     date: "2022-11-05",
     cost: "200.95",
   },
   {
+    id:105,
     txId: "0a123sb",
     user: "stevebower",
     date: "2022-11-02",
     cost: "13.55",
   },
   {
+    id:106,
     txId: "01e4dsa",
     user: "aberdohnny",
     date: "2021-09-01",
     cost: "43.95",
   },
   {
+    id:107,
     txId: "120s51a",
     user: "wootzifer",
     date: "2019-04-15",
     cost: "24.20",
   },
   {
+    id:108,
     txId: "0315dsaa",
     user: "jackdower",
     date: "2022-04-01",
@@ -1582,3 +1590,38 @@ export const mockGeographyData = [
     value: 171135,
   },
 ];
+
+export const mockStatData = [
+  {
+    id: 1,
+    name: "emails",
+    title: "12,361",
+    subtitle: "Emails Sent",
+    progress: "0.75",
+    increase: "+14%",
+  },
+  {
+    id: 2,
+    name: "sales",
+    title: "431,225",
+    subtitle: "Sales Obtained",
+    progress: "0.50",
+    increase: "+21%",
+  },
+  {
+    id: 3,
+    name: "clients",
+    title: "32,441",
+    subtitle: "New Clients",
+    progress: "0.35",
+    increase: "+4%",
+  },
+  {
+    id: 4,
+    name: "traffic",
+    title: "1,012,361",
+    subtitle: "Traffic Received",
+    progress: "0.83",
+    increase: "+43%",
+  }
+]

@@ -1,9 +1,11 @@
 import { ResponsiveLine } from "@nivo/line";
 import { useColors } from "../../hooks/useColors";
+// fetch real data and replace 
+import { mockLineData2 as data } from "../../data/mockData";
 
 
-const LineChart = ({ data, isMinimal }) => {
-    const { colors } = useColors();
+const LineChart = ({ isMinimal }) => {
+  const { colors } = useColors();
   return (
     <ResponsiveLine
         data={data}
@@ -33,7 +35,7 @@ const LineChart = ({ data, isMinimal }) => {
                   },
                   "text": {
                       "fill": colors.gray[100],
-                      "fontSize": 15,
+                      "fontSize": isMinimal ? 10 : 15,
                   }
               }
             },
