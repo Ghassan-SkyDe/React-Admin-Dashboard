@@ -10,7 +10,7 @@ import { useColors } from "../hooks/useColors";
 
 const Calendar = () => {
   const { colors } = useColors();
-  // make currentEvents to [empty array] / data is just for test
+  // change currentEvents to [empty array] / data is just for test
   const [currentEvents, setCurrentEvents] = useState([
           {id: "123", title: "All-day event", date: "2023-04-19"},
           {id: "124", title: "All-day event", date: "2023-04-29"},
