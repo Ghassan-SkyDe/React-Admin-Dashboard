@@ -9,7 +9,7 @@ const FAQ = () => {
   const faqData = mockFaqData;
   return (
     <Box m="20px">
-      {faqData && faqData.map( question => <AccordionComponent key={question.key} {...question}/> ) }
+      {faqData && faqData.map( question => <AccordionComponent key={question.id} {...question}/> ) }
     </Box>
   )
 }

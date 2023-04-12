@@ -104,4 +104,53 @@ export const sidebarData = [
     icon: <MapOutlinedIcon />,
     to: "/geography"
   },
-]
+];
+
+
+// header---
+export const headerConstants = {
+  "/bar": {
+    title: "Bar Chart",
+    subtitle: "Bar chart page for more Sales Quantity details"
+  },
+  "/calendar": {
+    title: "Calendar",
+    subtitle: "welcome to fullCalendar interactive page"
+  },
+  "/contacts": {
+    title: "Contacts Information",
+    subtitle: "list of Contacts for Future Reference"
+  },
+  "/": {
+    title: "Dashboard",
+    subtitle: "welcome to your dashboard"
+  },
+  "/faq": {
+    title: "FAQ",
+    subtitle: "welcome to Frequently Asked Questions Page"
+  },
+  "/form": {
+    title: "Profile Form",
+    subtitle: "You can create new User"
+  },
+  "/geography": {
+    title: "Geography Chart",
+    subtitle: "Geography Chart page for Geography Based Traffic details"
+  },
+  "/invoices": {
+    title: "Invoices Balances",
+    subtitle: "more information about Invoices balances list"
+  },
+  "/line": {
+    title: "Line Chart",
+    subtitle: "Line Chart page for more Revenue Generated details"
+  },
+  "/pie": {
+    title: "Pie Chart",
+    subtitle: "Pi Chart page for more details"
+  },
+  "/team": {
+    title: "Manage Team",
+    subtitle: "You can manage the Team Members"
+  },
+}

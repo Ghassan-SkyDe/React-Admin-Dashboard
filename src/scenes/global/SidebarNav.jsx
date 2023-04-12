@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 import { sidebarData } from "./constants";
 import { useColors } from "../../hooks/useColors";
+import profilePic from "../../assets/avatar.jpg";
 
 
 
@@ -15,7 +16,7 @@ import { useColors } from "../../hooks/useColors";
 const SidebarNav = () => {
   // replace with real ADMIN data
   // example 
-  const ADMIN = { name: "sky de", image: "https://i.pravatar.cc/300"};
+  const ADMIN = { name: "sky de", image: profilePic};
 
   const { collapseSidebar, collapsed } = useProSidebar();
   const { colors } = useColors();

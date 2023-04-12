@@ -50,7 +50,7 @@ const Dashboard = () => {
        xsGridColumn="span 12" 
        mdGridColumn="span 6" 
        xlGridColumn="span 4"/>
-      {/* third */}
+       
       <GeographyChartCard  
        xsGridColumn="span 12" 
        mdGridColumn="span 12" 
