@@ -1,68 +1,108 @@
-# Getting Started with Create React App
+# 🚀 React Admin Dashboard - Elevate Your Data Management Game! 📊
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Feel free to give it a start 🌟
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Tech Stack](#tech-stack)
+- [Demo](#demo)
+- [Screenshots](#screenshots)
+- [About](#about)
+- [Installation](#installation)
+- [Contact](#contact)
 
 
+## Tech Stack
+- ⚛️ React.js 
+- 🔄 Functional components 
+- 🌐 react-router-dom
+- 📅 fullcalendar
+- 📊 Nivo charts
+- 📜 Material UI
+- 📈 Data grid
+- 🎨Pure CSS 
+- 📦 React icons 
+- 🌗 Dark / Light mode 
+
+## Demo
+
+Take a look at the live project deployed on Netlify
+
+[Live Demo](https://react-admin-dashboar-skyde.netlify.app)
+
+![Demo](demo.gif)
+
+## Screenshots
+
+![chrome-capture-2023-8-26 (1)-min](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/e1b09fd3-6ba5-4494-8897-1f7abf055cde)
+
+![chrome-capture-2023-8-26 (2)-min](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/205565ec-0034-482c-a6ca-466ddfe7f569)
+
+![admin5](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/02e5c479-9d0b-4a5e-9cad-99d9941b34d5)
+
+![admin4](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/76ab13b5-794f-4cf2-b72b-d04cd7d23db6)
+
+![admin 2](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/4d7ad670-a03a-4a98-bf45-56013d2f4f36)
+
+![admib 1](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/718d29da-dcdc-4d4c-84d8-4e85c309d565)
+
+![admi3](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/5179216e-43da-474d-b3d5-ac72f1b2753a)
+
+
+
+
+
+
+
+## About
+
+Title: Welcome to our React Admin Dashboard – where data management gets a modern makeover!
+
+📈 Features That Make Data Exciting:
+
+🖌️ MUI Expertise: Our admin dashboard is built on the solid foundation of Material-UI (MUI), offering a sleek and efficient design. But we didn't stop there - we've added our custom style touches to make it truly exceptional.
+
+📊 Nivo Charts Showcase: Your data deserves to shine! We've harnessed the impressive capabilities of Nivo charts, presenting your information in a captivating bar, pie, line, and geography charts that tell your story with visual flair.
+
+📦 Data Management Simplified: With this dashboard, you're in control. Manage users, products, and events with ease. Our data grid, powered by MUI, ensures that your data is organized and accessible at your fingertips.
+
+🌗 Light and Dark Mode: We know that personalization matters. Switch between light and dark modes effortlessly to suit your preferences and work in an environment that's easy on your eyes.
+
+🎨 Stunning UI & Intuitive UX: First impressions matter, and our dashboard delivers. The stunning user interface coupled with an intuitive user experience ensures that you'll love working with your data every day.
+
+📈 Dashboard Overview: The centerpiece of our dashboard is the dynamic "Dashboard" page. It brings all your charts and key information summaries onto a single canvas, providing a bird's-eye view of your data at a glance.
+
+Ready to supercharge your data management? Our React Admin Dashboard is your go-to solution. Clone this repository, follow our setup instructions in the documentation, and empower your data-driven decisions like never before!
+
+📊 Elevate your data game with our React Admin Dashboard. Your data, your way! 📈
+
+
+
+## Installation
+
+Provided step-by-step instructions on how to install and run this project locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/Sky-De/React-Admin-Dashboard
+
+# Change directory
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Run the project
+npm run start
+```
+
+
+## Contact
+
+**skyDe**
+
+[LinkedIn](https://www.linkedin.com/in/sky-de-763248228)
+
+[GitHub](https://github.com/Sky-De)
+
+[Twitter](https://twitter.com/SkyDe1991?t=b2SJxGA4wmHwwgxDUUtE8Q&s=09)
