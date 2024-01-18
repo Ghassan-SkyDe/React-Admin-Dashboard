@@ -1,28 +1,44 @@
-# 🚀 React Admin Dashboard - Elevate Your Data Management Game! 📊
+#  React Admin Dashboard - Elevate Your Data Management Game! 📊
 
 Feel free to give it a start 🌟
+![line]
 
 ## Table of Contents
 
 - [Tech Stack](#tech-stack)
+- [Features](#features)
 - [Demo](#demo)
-- [Screenshots](#screenshots)
+- [Screenshots](#preview)
 - [About](#about)
 - [Installation](#installation)
 - [Contact](#contact)
 
+![line]
 
 ## Tech Stack
-- ⚛️ React.js 
-- 🔄 Functional components 
-- 🌐 react-router-dom
-- 📅 fullcalendar
-- 📊 Nivo charts
-- 📜 Material UI
-- 📈 Data grid
-- 🎨Pure CSS 
-- 📦 React icons 
-- 🌗 Dark / Light mode 
+
+![Static Badge](https://img.shields.io/badge/javascript-black?style=for-the-badge&logo=javascript)
+![Static Badge](https://img.shields.io/badge/React-black?style=for-the-badge&logo=react)
+![Static Badge](https://img.shields.io/badge/Create%2FReact%2FApp-black?style=for-the-badge&logo=react)
+![Static Badge](https://img.shields.io/badge/CSS-black?style=for-the-badge&logo=CSS3)
+![Static Badge](https://img.shields.io/badge/MUI-black?style=for-the-badge&logo=mui)
+![Static Badge](https://img.shields.io/badge/Nivo%2Fcharts-black?style=for-the-badge&logo=chart.js)
+![Static Badge](https://img.shields.io/badge/Data%2FGrid-black?style=for-the-badge&logo=MUI)
+![Static Badge](https://img.shields.io/badge/fullcalendar-black?style=for-the-badge&logo=calendar)
+ 
+![line]
+
+## Features
+
+- Dark-light mode
+- Stunning design
+- Charts ( line - pie - geo ....)
+- Calendar
+- Necessary tabs
+- Data grid pagination
+- Filters
+
+![line]
 
 ## Demo
 
@@ -32,7 +48,9 @@ Take a look at the live project deployed on Netlify
 
 ![Demo](demo.gif)
 
-## Screenshots
+![line]
+
+## Preview
 
 ![chrome-capture-2023-8-26 (1)-min](https://github.com/Sky-De/React-Admin-Dashboard/assets/79264045/e1b09fd3-6ba5-4494-8897-1f7abf055cde)
 
@@ -52,7 +70,7 @@ Take a look at the live project deployed on Netlify
 
 
 
-
+![line]
 
 ## About
 
@@ -76,7 +94,7 @@ Ready to supercharge your data management? Our React Admin Dashboard is your go-
 
 📊 Elevate your data game with our React Admin Dashboard. Your data, your way! 📈
 
-
+![line]
 
 ## Installation
 
@@ -96,7 +114,7 @@ npm install
 npm run start
 ```
 
-
+[line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 ## Contact
 
 **skyDe**
