@@ -16,7 +16,7 @@ import profilePic from "../../assets/avatar.jpg";
 const SidebarNav = () => {
   // replace with real ADMIN data
   // example 
-  const ADMIN = { name: "sky de", image: profilePic};
+  const ADMIN = { name: "Ghassan-SkyDe", image: profilePic};
 
   const { collapseSidebar, collapsed } = useProSidebar();
   const { colors } = useColors();
